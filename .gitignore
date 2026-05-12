@@ -1,23 +1,53 @@
+# ---------------------------------------------------------------------------
+# TinyAgents .gitignore
+#
+# Scope: TinyAgents is an AI-Agent SDLC learning project. The repo tracks
+# source code, docs, goal specs, helper scripts, and *learning evidence*
+# (selected loop markdown). It does NOT track runtime artifacts, generated
+# target projects, dependency caches, or environment-specific noise.
+#
+# See docs/repository-hygiene.md for the rationale.
+# ---------------------------------------------------------------------------
+
+# --- OS / editor noise ---
 .DS_Store
+.idea/
+.vscode/
+
+# --- Python ---
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.egg-info/
 
+# --- Node / Next / build outputs ---
 node_modules/
-.playwright/
 .next/
 dist/
 build/
 coverage/
 
+# --- Environment / secrets ---
 .env
 .env.*
 *.log
 
-# TinyAgents runtime artifacts
+# --- Playwright / browser test artifacts ---
+.playwright/
+playwright-report/
+test-results/
+
+# --- TinyAgents runtime artifacts ---
+# Per-loop screenshots, build logs, lint logs, etc. are large and
+# regenerated on every run; loop markdown (research.md, plan.md,
+# test-report.md, review-report.md, next-loop.md) stays tracked.
 loops/*/artifacts/
 loops/**/artifacts/
 loops/**/screenshots/
 
-# Generated target projects should usually be separate repos
+# --- Generated target projects ---
+# Target projects (e.g. portfolio-site) should live in their own repo, not
+# inside this learning repo. Ignored at any depth.
 portfolio-site/
 ../portfolio-site/

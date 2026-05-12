@@ -1,0 +1,13 @@
+{
+  "name": "tinylocalagents-tools",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Node helpers for TinyAgents (Playwright-based full-page screenshots for Stage 9.7 Visual Review Agent).",
+  "type": "module",
+  "scripts": {
+    "screenshot": "node scripts/screenshot.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

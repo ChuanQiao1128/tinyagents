@@ -1,0 +1,23 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+node_modules/
+.playwright/
+.next/
+dist/
+build/
+coverage/
+
+.env
+.env.*
+*.log
+
+# TinyAgents runtime artifacts
+loops/*/artifacts/
+loops/**/artifacts/
+loops/**/screenshots/
+
+# Generated target projects should usually be separate repos
+portfolio-site/
+../portfolio-site/

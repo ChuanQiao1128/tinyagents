@@ -51,3 +51,5 @@ loops/**/screenshots/
 # inside this learning repo. Ignored at any depth.
 portfolio-site/
 ../portfolio-site/
+loops/
+auto-report.md
